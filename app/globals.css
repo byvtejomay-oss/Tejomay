@@ -1347,11 +1347,11 @@ textarea.field-control {
   z-index: 40;
   display: inline-flex;
   align-items: center;
-  gap: 0.6rem;
+  justify-content: center;
+  width: 56px;
   height: 56px;
-  min-width: 56px;
-  padding: 0 14px;
-  border-radius: 999px;
+  padding: 0;
+  border-radius: 50%;
   background: #1c9e4f;
   color: #fff;
   box-shadow: 0 12px 28px -10px rgb(28 158 79 / 0.7);
@@ -1370,19 +1370,6 @@ textarea.field-control {
 .whatsapp-fab:focus-visible {
   outline: 3px solid var(--espresso);
   outline-offset: 3px;
-}
-
-.whatsapp-fab-label {
-  display: none;
-  padding-right: 0.35rem;
-  font-weight: 500;
-  font-size: 0.95rem;
-}
-
-@media (min-width: 1024px) {
-  .whatsapp-fab-label {
-    display: inline;
-  }
 }
 
 /* ---------- Motion ---------- */

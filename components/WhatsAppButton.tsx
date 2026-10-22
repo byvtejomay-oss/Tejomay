@@ -11,9 +11,6 @@ export default function WhatsAppButton() {
       aria-label="Chat with Tejomay by V on WhatsApp (opens in a new tab)"
     >
       <WhatsAppIcon size={28} />
-      <span className="whatsapp-fab-label" aria-hidden="true">
-        Chat with us
-      </span>
     </a>
   );
 }
