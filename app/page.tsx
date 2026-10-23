@@ -23,7 +23,7 @@ export default function HomePage() {
           <SectionHeading
             id="featured-title"
             eyebrow="Featured Collection"
-            title="Diyas Made to Shine"
+            title="Diyas Made to Shines"
             intro="A glimpse of our creative diyas — each one finished with pearls, gold beads and little sparkling details."
           />
           <ProductGrid products={featuredProducts} variant="showcase" />
