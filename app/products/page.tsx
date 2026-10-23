@@ -40,7 +40,7 @@ export default function ProductsPage() {
       </section>
 
       <ContactCTA
-        title="Looking for Something Special?"
+        title="Looking for Something Great?"
         text="Planning a celebration or a festive gift? Get in touch and we'll help you find the right diyas."
         primary={{ href: "/contact", label: "Contact Us" }}
         secondary={{ href: "/about", label: "Our Story" }}
