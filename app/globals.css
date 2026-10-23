@@ -1443,3 +1443,36 @@ textarea.field-control {
     transition-duration: 0.01ms !important;
   }
 }
+
+/* ---------- Diya cursor ----------
+   Native CSS cursor (no JS), so it tracks the pointer with zero lag.
+   Only applied on devices with a precise, hover-capable pointer; touch
+   devices keep their default interaction. Hotspot is the flame tip. */
+
+@media (hover: hover) and (pointer: fine) {
+  html {
+    cursor:
+      url("/cursors/diya.svg") 16 1,
+      url("/cursors/diya.png") 16 1,
+      auto;
+  }
+
+  a[href],
+  button:not(:disabled),
+  input:is([type="button"], [type="submit"], [type="reset"]):not(:disabled),
+  [role="button"],
+  label[for],
+  summary,
+  select {
+    cursor:
+      url("/cursors/diya-pointer.svg") 16 1,
+      url("/cursors/diya-pointer.png") 16 1,
+      pointer;
+  }
+
+  input:not([type="button"], [type="submit"], [type="reset"], [type="checkbox"], [type="radio"]),
+  textarea,
+  [contenteditable="true"] {
+    cursor: text;
+  }
+}
